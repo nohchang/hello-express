@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-mongoose.connect(`mongodb+srv://nchq2123:12341234@express-cluster.1llznxr.mongodb.net/?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://nchq2123:<password>@express-cluster.1llznxr.mongodb.net/?retryWrites=true&w=majority`)
   .then(() => console.log('mongodb connected'))
   .catch(err => console.log(err))
 
